@@ -2,9 +2,7 @@
 
 Build 2026.09.11‑5
 
-A single-page, offline configurator for daisy-chained power on training-table runs. Lay out one or more runs of tables, and the app draws the layout (plan or isometric), routes the trunk with real cord lengths, enforces the run limit, and produces a bill of materials.
-
-No build step, no server, no external requests — everything is inside `index.html`.
+A single-page configurator for daisy-chained power on training-table runs. Lay out one or more runs of tables, and the app draws the layout (plan or isometric), routes the trunk with real cord lengths, enforces the run limit, and produces a bill of materials.
 
 ## Parts
 
@@ -31,12 +29,3 @@ No build step, no server, no external requests — everything is inside `index.h
 - **New / Save / Load / Undo / Redo** — Save downloads a JSON layout; Load restores one.
 - **Bill of materials** — totals plus a per‑run breakdown; copy to clipboard or download the CSV spreadsheet.
 
-## Publish on GitHub Pages
-
-1. Create a new repository on GitHub (public, or private on a paid plan).
-2. Upload `index.html` and `README.md` to the repository root (drag and drop on the repo page → Commit).
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, set Source to **Deploy from a branch**, Branch to **main**, folder **/ (root)**, then **Save**.
-5. Wait a minute; the page is live at `https://<your-user>.github.io/<repo-name>/`.
-
-To update later, upload a new `index.html` over the old one — Pages redeploys automatically.
