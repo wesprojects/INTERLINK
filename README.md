@@ -1,6 +1,6 @@
 # Training Table Run Configurator
 
-Build 2026.09.11‑3
+Build 2026.09.11‑4
 
 A single-page, offline configurator for daisy-chained power on training-table runs. Lay out one or more runs of tables, and the app draws the layout (plan or isometric), routes the trunk with real cord lengths, enforces the run limit, and produces a bill of materials.
 
