@@ -1,5 +1,7 @@
 # Training Table Run Configurator
 
+Build 2026.09.11‑1
+
 A single-page, offline configurator for daisy-chained power on training-table runs. Lay out one or more runs of tables, and the app draws the layout (plan or isometric), routes the trunk with real cord lengths, enforces the run limit, and produces a bill of materials.
 
 No build step, no server, no external requests — everything is inside `index.html`.
@@ -24,7 +26,7 @@ No build step, no server, no external requests — everything is inside `index.h
 ## Using it
 
 - **Feed** — which end the wall feed enters from. **Socket** — clamp position on the back edge, from the seated user's view (default Right).
-- **Runs** — add runs; per run set surfaces (1–8), surface size, straight run or face to face, table spacing and aisle width.
+- **Runs** — add runs; per run set surfaces (1–8), surface size, straight run or face to face, table spacing, aisle width to the next run (0 = face to face with its own trunk) and distance to the wall. All measurements are inches.
 - **Plan / Isometric** — scroll to zoom, drag to pan, Fit to reset.
 - **New / Save / Load / Undo / Redo** — Save downloads a JSON layout; Load restores one.
 - **Bill of materials** — totals plus a per‑run breakdown; copy to clipboard or download the CSV spreadsheet.
