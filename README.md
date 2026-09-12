@@ -1,6 +1,6 @@
 # Training Table Run Configurator
 
-Build 2026.09.12‑1
+Build 2026.09.12‑2
 
 A single-page, offline configurator for daisy-chained power on training-table runs. Lay out one or more runs of tables, and the app draws the layout (plan or isometric), routes the trunk with real cord lengths, enforces the run limit, and produces a bill of materials.
 
@@ -11,7 +11,7 @@ No build step, no server, no external requests — everything is inside `index.h
 | Part | Description | Quantity rule |
 | --- | --- | --- |
 | 5CDDCSTART | Starter cord: NEMA 5‑15P, 70.9 in 14 AWG, inline module with RESET breaker and one 5‑15R, 3.9 in tail to GST female | 1 per run (one trunk) |
-| 5CDDCCONN | GST connector, 4‑port: trunk in/out below, two clamp‑socket outputs above; mounted to the underside on the spine | 1 per surface (straight run) · 1 per pair (face to face) |
+| 5CDDCCONN | GST connector, 4‑port on 2 tiers: power trunk in/out on the upper tier, two power‑module outputs on the lower; mounted to the underside on the spine | 1 per surface (straight run) · 1 per pair (face to face) |
 | 5CDDCEXT | GST extension, 70.9 in, male ↔ female | positions − 1 per run |
 | 5CDPWR2WH‑GST | Clamp socket: 2 × TR 5‑15R, USB‑A, USB‑C 65 W, 70.9 in lead with GST male | 1 per surface |
 | VOYA001 | Voyager embedded power unit: 7.09 × 2.76 × 1.73 in, cutout 5.51 × 1.69 in R0.24, 2 × 15 A 125 V outlets, USB‑A + USB‑C PD 20 W, max 1875 W, 118.1 in (3 m) 14 AWG cord; set into the top 1.5 in from the back edge | 1 per surface (alternative to the clamp socket) |
