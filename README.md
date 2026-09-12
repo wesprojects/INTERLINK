@@ -1,8 +1,10 @@
 # Training Table Run Configurator
 
-Build 2026.09.11‑5
+Build 2026.09.12‑1
 
-A single-page configurator for daisy-chained power on training-table runs. Lay out one or more runs of tables, and the app draws the layout (plan or isometric), routes the trunk with real cord lengths, enforces the run limit, and produces a bill of materials.
+A single-page, offline configurator for daisy-chained power on training-table runs. Lay out one or more runs of tables, and the app draws the layout (plan or isometric), routes the trunk with real cord lengths, enforces the run limit, and produces a bill of materials.
+
+No build step, no server, no external requests — everything is inside `index.html`.
 
 ## Parts
 
@@ -12,6 +14,7 @@ A single-page configurator for daisy-chained power on training-table runs. Lay o
 | 5CDDCCONN | GST connector, 4‑port: trunk in/out below, two clamp‑socket outputs above; mounted to the underside on the spine | 1 per surface (straight run) · 1 per pair (face to face) |
 | 5CDDCEXT | GST extension, 70.9 in, male ↔ female | positions − 1 per run |
 | 5CDPWR2WH‑GST | Clamp socket: 2 × TR 5‑15R, USB‑A, USB‑C 65 W, 70.9 in lead with GST male | 1 per surface |
+| VOYA001 | Voyager embedded power unit: 7.09 × 2.76 × 1.73 in, cutout 5.51 × 1.69 in R0.24, 2 × 15 A 125 V outlets, USB‑A + USB‑C PD 20 W, max 1875 W, 118.1 in (3 m) 14 AWG cord; set into the top 1.5 in from the back edge | 1 per surface (alternative to the clamp socket) |
 
 ## Rules built in
 
@@ -29,3 +32,12 @@ A single-page configurator for daisy-chained power on training-table runs. Lay o
 - **New / Save / Load / Undo / Redo** — Save downloads a JSON layout; Load restores one.
 - **Bill of materials** — totals plus a per‑run breakdown; copy to clipboard or download the CSV spreadsheet.
 
+## Publish on GitHub Pages
+
+1. Create a new repository on GitHub (public, or private on a paid plan).
+2. Upload `index.html` and `README.md` to the repository root (drag and drop on the repo page → Commit).
+3. Go to **Settings → Pages**.
+4. Under **Build and deployment**, set Source to **Deploy from a branch**, Branch to **main**, folder **/ (root)**, then **Save**.
+5. Wait a minute; the page is live at `https://<your-user>.github.io/<repo-name>/`.
+
+To update later, upload a new `index.html` over the old one — Pages redeploys automatically.
